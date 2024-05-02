@@ -24,9 +24,9 @@ dim_zones as (
     where borough != 'Unknown'
 )
 select trips_unioned.tripid, 
-    trips_unioned.vendorid, 
+    trips_unioned.vendor_id, 
     trips_unioned.service_type,
-    trips_unioned.ratecodeid, 
+    trips_unioned.rate_code, 
     trips_unioned.pickup_locationid, 
     pickup_zone.borough as pickup_borough, 
     pickup_zone.zone as pickup_zone, 
@@ -45,7 +45,7 @@ select trips_unioned.tripid,
     trips_unioned.tip_amount, 
     trips_unioned.tolls_amount, 
     trips_unioned.ehail_fee, 
-    trips_unioned.improvement_surcharge, 
+    trips_unioned.imp_surcharge, 
     trips_unioned.total_amount, 
     trips_unioned.payment_type, 
     trips_unioned.payment_type_description

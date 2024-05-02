@@ -1,3 +1,4 @@
+
 version: 2
 
 models:
@@ -28,7 +29,14 @@ models:
         data_type: string
         description: "unique identifier conformed by the combination of vendorid and pickyp time"
 
-      - name: vendorid
+  - name: fact_trips
+    description: ""
+    columns:
+      - name: tripid
+        data_type: string
+        description: ""
+
+      - name: vendor_id
         data_type: int64
         description: ""
 
@@ -36,7 +44,7 @@ models:
         data_type: string
         description: ""
 
-      - name: ratecodeid
+      - name: rate_code
         data_type: int64
         description: ""
 
@@ -112,7 +120,7 @@ models:
         data_type: numeric
         description: ""
 
-      - name: improvement_surcharge
+      - name: imp_surcharge
         data_type: numeric
         description: ""
 
